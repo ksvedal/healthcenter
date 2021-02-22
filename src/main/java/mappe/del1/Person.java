@@ -1,9 +1,15 @@
-package idatx2001.oblig3;
+package mappe.del1;
 
 public abstract class Person {
     private String firstName;
     private String lastName;
     private String socialSecurityNumber;
+
+    public Person(String socialSecurityNumber, String firstName, String lastName) {
+        this.socialSecurityNumber = socialSecurityNumber;
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
 
     /**
      * Sets first name.
@@ -60,7 +66,8 @@ public abstract class Person {
     /**
      * Overrides the toString() method. Returns the parameters.
      */
+    @Override
     public String toString() {
-        return this.firstName+" "+this.lastName+" "+this.socialSecurityNumber;
+        return this.socialSecurityNumber+" "+this.firstName+" "+this.lastName;
     }
 }
