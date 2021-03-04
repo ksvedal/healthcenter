@@ -11,7 +11,8 @@ public class Patient extends Person implements Diagnosable {
         return this.diagnosis;
     }
 
+    @Override
     public void setDiagnosis(String diagnosis) {
-
+        this.diagnosis = diagnosis;
     }
 }
